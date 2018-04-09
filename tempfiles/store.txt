@@ -1,0 +1,6 @@
+22/ssh
+25/smtp
+80/http
+3306/mysql
+5050/mmcc
+5432/postgresql
