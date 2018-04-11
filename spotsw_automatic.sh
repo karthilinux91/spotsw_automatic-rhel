@@ -995,7 +995,8 @@ echo "WordPress"
 echo "---------"
 > $mainpath/tempfiles/store.txt
 > $mainpath/tempfiles/wpplugins_result.txt
-$mainpath/packages/locate$flag_version wp-login.php -d $mainpath/mlocate.db | awk -F"wp-login" '{print $1}' > $mainpath/tempfiles/store.txt
+#$mainpath/packages/locate$flag_version wp-login.php -d $mainpath/mlocate.db | awk -F"wp-login" '{print $1}' > $mainpath/tempfiles/store.txt
+$mainpath/packages/locate$flag_version wp-includes/version.php -d $mainpath/mlocate.db | awk -F"version" '{print $1}' > $mainpath/tempfiles/store.txt
 FILENAME="$mainpath/tempfiles/store.txt"
 
 #echo mainpath: $mainpath 
@@ -1023,15 +1024,21 @@ then
 	   plugins_json="\"unknown"\"
  	  
 	   ########check part #####################
-	  check=`$mainpath/packages/wp-cli core version --allow-root 2>&1` 
+	  #check=`$mainpath/packages/wp-cli core version --allow-root 2>&1` 
+  	  check=`cat version.php 2>&1` 
+
 	  versionflag=`echo $?`
 	  check=`$mainpath/packages/wp-cli plugin list  --format=yaml  --allow-root  2>&1`
       modulesflag=`echo $?`
 	  
 	  if [ $versionflag -eq 0 ]
 	  then
-      version="`$mainpath/packages/wp-cli core version --allow-root | grep -Eo '[+-]?[0-9]+([.][0-9]+)?+([.][0-9]+)?'`"
+      #version="`$mainpath/packages/wp-cli core version --allow-root | grep -Eo '[+-]?[0-9]+([.][0-9]+)?+([.][0-9]+)?'`"
+	  #echo "new wordpress method"
+	  version="`cat version.php | grep "wp_version =" |  awk -F"=" '{print $2}'  | grep -Eo '[+-]?[0-9]+([.][0-9]+)?+([.][0-9]+)?'`"
+
 	  fi
+
 	  
 	  if [ $modulesflag -eq 0 ]
 	  then
@@ -1593,49 +1600,6 @@ else
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
 	echo  " <td align=center>  PostgreSQL Server:9.6.3 </td></tr> "    >> report.html
 fi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
