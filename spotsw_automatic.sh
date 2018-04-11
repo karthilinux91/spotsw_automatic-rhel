@@ -318,7 +318,7 @@ echo  "	<thead>							"	>>  report.html
 echo  "	<tr>							"	>>  report.html
 echo  "	<th class=""text-left"">Package Name</th>		"	>>  report.html
 echo  "	<th class=""text-left"">Information of the Packages</th>"	>>  report.html
-echo  "	<th class=""text-left"">Latest package version  </th>   "	>>  report.html
+#echo  "	<th class=""text-left"">Latest package version  </th>   "	>>  report.html
 echo  "	</tr>							"	>>  report.html
 echo  "	</thead>						"	>>  report.html
 echo  "	<tbody class=""table-hover"">				"	>>  report.html
@@ -381,14 +381,14 @@ then
 		   fi 
 	done
    	echo  "</td>                                            "        >>  report.html
-        echo  " <td align=center>  Apache:2.4.27   </td>  </tr> "        >> report.html
+      #  echo  " <td align=center>  Apache:2.4.27   </td>  </tr> "        >> report.html
 else
   echo "Apache httpd not found!!"
   echo "\"apache"\":["\"not detected"\"], >> report.json 
 	
 	echo  " <tr> <td class=""text-left"">Apache</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  Apache:2.4.27</td></tr> "    >> report.html
+	#echo  " <td align=center>  Apache:2.4.27</td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -440,13 +440,13 @@ then
 	done
 
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  PHP:7.1.7            </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  PHP:7.1.7            </td>  </tr> "        >> report.html
 else
   echo "PHP not found!"
   echo "\"php"\":["\"not detected"\"], >> report.json 
   echo  " <tr> <td class=""text-left"">Php</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  PHP:7.1.7</td></tr> "    >> report.html
+	#echo  " <td align=center>  PHP:7.1.7</td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -492,14 +492,14 @@ then
 	done
 
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  Tomcat:8.5.16         </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  Tomcat:8.5.16         </td>  </tr> "        >> report.html
 else
   echo "Tomcat not found!"
   echo "\"tomcat"\":["\"not detected"\"], >> report.json 
 
   echo  " <tr> <td class=""text-left"">Tomcat</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  Tomcat:8.5.16 </td></tr> "    >> report.html
+	#echo  " <td align=center>  Tomcat:8.5.16 </td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -547,13 +547,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  Open JDK Java: 1.8.0        </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  Open JDK Java: 1.8.0        </td>  </tr> "        >> report.html
 else
   echo "Java not found !"
   echo "\"java"\":["\"not detected"\"], >> report.json 
    echo  " <tr> <td class=""text-left"">JAVA</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  Open JDK Java: 1.8.0 </td></tr> "    >> report.html
+	#echo  " <td align=center>  Open JDK Java: 1.8.0 </td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -598,13 +598,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  PostgreSQL Server:9.6.3         </td>  </tr> "        >> report.html
+#	echo  " <td align=center>  PostgreSQL Server:9.6.3         </td>  </tr> "        >> report.html
 else
   echo "PostgreSQl_Server not found!"
   echo "\"postgresql_server"\":["\"not detected"\"], >> report.json 
     echo  " <tr> <td class=""text-left"">PostgreSQL Server</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  PostgreSQL Server:9.6.3 </td></tr> "    >> report.html
+	#echo  " <td align=center>  PostgreSQL Server:9.6.3 </td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -651,14 +651,14 @@ then
 	done
 
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  Postgres Client:9.6.3         </td>  </tr> "        >> report.html
+#	echo  " <td align=center>  Postgres Client:9.6.3         </td>  </tr> "        >> report.html
 	
 else
   echo "PostgreSQl_Client not found !"
   echo "\"postgresql_client"\":["\"not detected"\"], >> report.json 
     echo  " <tr> <td class=""text-left"">PostgreSQL Client</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center> Postgres Client:9.6.3 </td></tr> "    >> report.html
+	#echo  " <td align=center> Postgres Client:9.6.3 </td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -710,14 +710,14 @@ then
 	done
 
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  MySQL Server : 5.7.19 0r MariaDB server: 10.2.7  </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  MySQL Server : 5.7.19 0r MariaDB server: 10.2.7  </td>  </tr> "        >> report.html
 	
 else
   echo "MySQL_MariaDB_Server not found !"
   echo "\"mysql_mariadb_server"\":["\"not detected"\"], >> report.json 
    echo  " <tr> <td class=""text-left"">MySQL or MariaDB Server</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center> MySQL Server : 5.7.19 0r MariaDB server: 10.2.7 </td></tr> "    >> report.html
+	#echo  " <td align=center> MySQL Server : 5.7.19 0r MariaDB server: 10.2.7 </td></tr> "    >> report.html
 fi
 
 
@@ -766,13 +766,13 @@ then
 	done
 
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  MySQL client:5.7.19  or Mariadb client:10.2.7       </td>  </tr> "        >> report.html	
+	#echo  " <td align=center>  MySQL client:5.7.19  or Mariadb client:10.2.7       </td>  </tr> "        >> report.html	
 else
   echo "MySQL_MariaDB_Client not found !"
   echo "\"mysql_mariadb_client"\":["\"not detected"\"], >> report.json 
     echo  " <tr> <td class=""text-left"">MySQL or MariaDB Client</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center> MySQL client:5.7.19  or Mariadb client:10.2.7   </td></tr> "    >> report.html
+	#echo  " <td align=center> MySQL client:5.7.19  or Mariadb client:10.2.7   </td></tr> "    >> report.html
 fi
 
 
@@ -819,13 +819,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  Perl:5.26.0        </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  Perl:5.26.0        </td>  </tr> "        >> report.html
 else
   echo "Perl not found ! "
   echo "\"perl"\":["\"not detected"\"], >> report.json 
     echo  " <tr> <td class=""text-left"">Perl </td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>Perl:5.26.0  </td></tr> "    >> report.html
+	#echo  " <td align=center>Perl:5.26.0  </td></tr> "    >> report.html
 fi
 
 
@@ -873,13 +873,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  Python:3.6.2        </td>  </tr> "        >> report.html
+#	echo  " <td align=center>  Python:3.6.2        </td>  </tr> "        >> report.html
 else
   echo "Python not found!"
   echo "\"python"\":["\"not detected"\"], >> report.json 
     echo  " <tr> <td class=""text-left"">Python </td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>Python:3.6.2  </td></tr> "    >> report.html
+	#echo  " <td align=center>Python:3.6.2  </td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -1076,13 +1076,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                            "        >>  report.html
-        echo  " <td align=center>  Wordpress:4.8.1   </td>  </tr> "        >> report.html
+      #  echo  " <td align=center>  Wordpress:4.8.1   </td>  </tr> "        >> report.html
 else
   echo "wordpress not found!!"
   echo "\"wordpress"\":["\"not detected"\"], >> report.json 
    echo  " <tr> <td class=""text-left"">Wordpress </td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>Wordpress:4.8.1  </td></tr> "    >> report.html
+	#echo  " <td align=center>Wordpress:4.8.1  </td></tr> "    >> report.html
 fi
 cd $mainpath
 
@@ -1197,13 +1197,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                            "        >>  report.html
-        echo  " <td align=center>  Drupal:8.3.6    </td>  </tr> "        >> report.html
+       # echo  " <td align=center>  Drupal:8.3.6    </td>  </tr> "        >> report.html
 else
   echo "Drupal not found!!"
   echo "\"drupal"\":["\"not detected"\"], >> report.json 
    echo  " <tr> <td class=""text-left"">Drupal</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center> Drupal:8.3.6   </td></tr> "    >> report.html
+	#echo  " <td align=center> Drupal:8.3.6   </td></tr> "    >> report.html
 fi
 cd $mainpath
 
@@ -1249,13 +1249,13 @@ then
 	  fi 
 	done
    		echo  "</td>                                          "        >>  report.html
-		echo  " <td align=center>  NodeJS:8.4.0         </td>  </tr> "        >> report.html
+		#echo  " <td align=center>  NodeJS:8.4.0         </td>  </tr> "        >> report.html
 else
  	 echo "NodeJS not found!"
   	 echo "\"node"\":["\"not detected"\"], >> report.json 
   	 echo  " <tr> <td class=""text-left"">NodeJS</td>"       >>  report.html
 	 echo  " <td align=center>   Not Detected </td> "        >> report.html
-	 echo  " <td align=center> NodeJS:8.4.0     </td></tr> "    >> report.html
+	# echo  " <td align=center> NodeJS:8.4.0     </td></tr> "    >> report.html
 fi
 echo ""
 #########################################################################################
@@ -1300,13 +1300,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  NPM:5.3.0         </td>  </tr> "        >> report.html
+#	echo  " <td align=center>  NPM:5.3.0         </td>  </tr> "        >> report.html
 else
   echo "NPM not found!"
   echo "\"npm"\":["\"not detected"\"], >> report.json 
   echo  " <tr> <td class=""text-left"">NPM</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>NPM:5.3.0        </td></tr> "    >> report.html
+#	echo  " <td align=center>NPM:5.3.0        </td></tr> "    >> report.html
 fi
 
 echo ""
@@ -1357,13 +1357,13 @@ then
 	   fi 
 	done
    	echo  "</td>                                            "        >>  report.html
-        echo  " <td align=center>  Nginx:1.12.1   </td>  </tr> "        >> report.html
+       # echo  " <td align=center>  Nginx:1.12.1   </td>  </tr> "        >> report.html
 else
   echo "Nginx not found!!"
   echo "\"nginx"\":["\"not detected"\"], >> report.json 
   echo  " <tr> <td class=""text-left"">Nginx</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>Nginx:1.12.1        </td></tr> "    >> report.html
+#	echo  " <td align=center>Nginx:1.12.1        </td></tr> "    >> report.html
 fi
 
 ########################################################################
@@ -1414,13 +1414,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                            "        >>  report.html
-        echo  " <td align=center>  OpenLiteSpeed:1.4.27 </td>  </tr> "        >> report.html
+       # echo  " <td align=center>  OpenLiteSpeed:1.4.27 </td>  </tr> "        >> report.html
 else
   echo "OpenLiteSpeed not found!!"
   echo "\"litespeed"\":["\"not detected"\"], >> report.json 
   echo  " <tr> <td class=""text-left"">OpenLiteSpeed</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>LiteSpeed:1.4.27 </td></tr> "    >> report.html
+#	echo  " <td align=center>LiteSpeed:1.4.27 </td></tr> "    >> report.html
 fi
 
 
@@ -1481,14 +1481,14 @@ then
 		   fi 
 	done
    	echo  "</td>                                            "        >>  report.html
-        echo  " <td align=center>  Apache:2.4.27   </td>  </tr> "        >> report.html
+       # echo  " <td align=center>  Apache:2.4.27   </td>  </tr> "        >> report.html
 else
   echo "Apache httpd not found!!"
   echo "\"apache"\":["\"not detected"\"], >> report.json 
 	
 	echo  " <tr> <td class=""text-left"">Apache-Run</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  Apache:2.4.27</td></tr> "    >> report.html
+#	echo  " <td align=center>  Apache:2.4.27</td></tr> "    >> report.html
 fi
 
 
@@ -1542,13 +1542,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  Open JDK Java: 1.8.0        </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  Open JDK Java: 1.8.0        </td>  </tr> "        >> report.html
 else
   echo "Java not found !"
   echo "\"java"\":["\"not detected"\"], >> report.json 
    echo  " <tr> <td class=""text-left"">JAVA-Run</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  Open JDK Java: 1.8.0 </td></tr> "    >> report.html
+#	echo  " <td align=center>  Open JDK Java: 1.8.0 </td></tr> "    >> report.html
 fi
 
 
@@ -1592,13 +1592,13 @@ then
 	  fi 
 	done
    	echo  "</td>                                          "        >>  report.html
-	echo  " <td align=center>  PostgreSQL Server:9.6.3         </td>  </tr> "        >> report.html
+	#echo  " <td align=center>  PostgreSQL Server:9.6.3         </td>  </tr> "        >> report.html
 else
   echo "PostgreSQl_Server not found!"
   echo "\"postgresql_server"\":["\"not detected"\"], >> report.json 
     echo  " <tr> <td class=""text-left"">PostgreSQL Server-Run</td>"       >>  report.html
 	echo  " <td align=center>   Not Detected </td> "        >> report.html
-	echo  " <td align=center>  PostgreSQL Server:9.6.3 </td></tr> "    >> report.html
+	#echo  " <td align=center>  PostgreSQL Server:9.6.3 </td></tr> "    >> report.html
 fi
 
 
